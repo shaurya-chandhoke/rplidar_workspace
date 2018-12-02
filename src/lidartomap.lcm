@@ -1,0 +1,6 @@
+package lidarlcm;
+
+struct transmitter
+{
+	int64_t row[385];
+}
