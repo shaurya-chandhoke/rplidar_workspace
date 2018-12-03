@@ -1,6 +1,6 @@
 # rplidar_workspace
 
-The rplidar_workspace repository contains source code for connecting your Raspberry Pi 3 with the RPLIDAR A2M8 Lidar and Zumo 32U4 robot for simulateneous localization and mapping, or SLAM. The repository makes use of BreezySLAM, an open source SLAM library and LCM, a set of specific libraries written for communication and marshalling.
+The rplidar_workspace repository contains source code for connecting your Raspberry Pi 3 with the RPLIDAR A2M8 lidar and Zumo 32U4 robot for simulateneous localization and mapping, or SLAM. The repository makes use of BreezySLAM, an open source SLAM library, LCM, a set of specific libraries written for communication and marshalling, and the A2M8's own library for connecting and commanding the lidar.
 
 **NOTE: Whenever connecting the A2M8 and/or 32U4, it is necessary to give the serial port adapter files read and write permissions**
 ```
@@ -15,6 +15,16 @@ If not done already, install the **libglib2.0-dev** library
 ```
 sudo apt-get install libglib2.0-dev
 ```
+### A2M8
+The A2M8 has its own static library that will need to be installed in the system
+
+1. Go to the **rplidar_workspace/src/rplidar_sdk/sdk** directory and compile the **Makefile**
+```
+make
+```
+The result will be a new **/output** folder. Traverse into it until you find a file labelled **librplidar_sdk.a**.
+
+2. Copy the library into **rplidar_sdk/src**
 
 ### LCM
 
