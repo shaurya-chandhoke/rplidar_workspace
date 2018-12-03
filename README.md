@@ -16,7 +16,7 @@ If not done already, install the **libglib2.0-dev** library
 sudo apt-get install libglib2.0-dev
 ```
 
-#### LCM
+### LCM
 
 Use this link to set up [lcm](http://lcm-proj.github.io/) on your Raspberry Pi 3
 
@@ -35,7 +35,7 @@ sudo python3 setup.py install
 
 **The lcm library should now be installed on your system**
 
-#### BreezySLAM
+### BreezySLAM
 
 The library is within the repository, but it must be installed on your system.
 
