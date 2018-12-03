@@ -24,7 +24,7 @@ make
 ```
 The result will be a new **/output** folder. Traverse into it until you find a file labelled **librplidar_sdk.a**.
 
-2. Copy the library into **rplidar_sdk/src**
+2. Copy the library into **rplidar_workspace/src**
 
 ### LCM
 
