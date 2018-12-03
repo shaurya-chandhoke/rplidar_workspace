@@ -36,7 +36,8 @@ pltmovie:
 movie:
 	./logmovie.py exp1 1 9999
 
-pytest: 
+pytest:
+	chmod +x *.py
 	./log2pgm.py $(DATASET) $(USE_ODOMETRY) $(RANDOM_SEED)
 #	$(VIEWER) $(DATASET).pgm ~/Desktop/$(DATASET).pgm
 
