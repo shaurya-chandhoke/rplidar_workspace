@@ -80,9 +80,12 @@ It is now time to get everything up and running
 2. Open two terminals. The first terminal should be in the **rplidar_workspace/src/** directory, and the second should be in the **rplidar_workspace/src/mapping/BreezySLAM/examples/**. 
    - In the first terminal, type:
    ```
+   chmod +x compile.sh compile_and_execute.sh
    ./compile.sh
    ./compile_and_execute.sh
    ```
+   **Note: Giving executable permissions to compile.sh and compile_and_execute.sh only has to be done once. After that, simply type in the 2nd and 3rd lines shown above.**
+
    - In the second terminal, type:
    ```
    make pytest
