@@ -46,6 +46,7 @@ sudo python3 setup.py install
 
 ## Getting Started
 **NOTE: Along with giving the serial port adapter files read and write permission, you must also clear the current buffer in the serial port for the 32U4. There is a python script written in rplidar_workspace/src to help reset the buffer.**
+
 ```
 python3 ~/rplidar_workspace/src/robotbufferreset.py
 ```
@@ -56,7 +57,7 @@ b -> backward
 s -> stop
 ```
 To exit the program, press ctrl+c to terminate the script.
-
+________________________________________________________________________________________________________________________________________
 1. In a terminal, go to your **rplidar_workspace/src/** directory and look for a file labelled **lidartomap.lcm**. Enter the following command to compile the file and auto-generate the appropriate folder:
 ```
 lcm-gen -x lidartomap.lcm
@@ -64,7 +65,7 @@ lcm-gen -p lidartomap.lcm
 ```
 There should now be a **lidarlcm** folder in the current directory. Copy this folder to the **rplidar_workspace/src/mapping/BreezySLAM/examples** folder
 
-It is now time to turn get everything up and running
+It is now time to get everything up and running
 
 2. Open two terminals. The first terminal should be in the **rplidar_workspace/src/** directory, and the second should be in the **rplidar_workspace/src/mapping/BreezySLAM/examples/**. 
    - In the first terminal, type:
